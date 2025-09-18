@@ -128,7 +128,7 @@
 }
 
 .header__contact-link:hover {
-  background-color: var(--secondary); /* Например, смена фона на второй цвет */
+  background-color: var(--secondary);
 }
 
 
