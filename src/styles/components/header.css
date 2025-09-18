@@ -1,0 +1,135 @@
+/* хедер растягивается на всю ширину экрана */
+.header {
+  width: 100%;
+  height: 661px;
+  background: url('/images/background.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  position: relative;
+  align-items: flex-start;
+}
+
+/* контейнер для контента внутри хедера */
+.header__container {
+  width: 100%;
+  max-width: 1260px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* контейнер с логотипом и навигацией */
+.header__top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 52px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.header__logo-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: opacity 0.3s ease;
+}
+
+.header__logo-link:hover {
+  opacity: 0.8;
+}
+
+.header__logo-create {
+  width: 130px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.header__nav {
+  width: 690px;
+  height: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.header__nav-list {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  color: var(--white);
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 160%;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.header__nav-link:hover {
+  opacity: 1;
+}
+
+.header__nav-link-text {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-link-arrow {
+  width: 16px; 
+  height: 16px; 
+}
+
+.header__nav-link--active {
+  color: var(--white);
+  opacity: 1;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  right: 0;
+}
+
+.header__contact-link {
+  color: var(--white);
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  border-radius: 4px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  transition: background-color 0.3s ease;
+  width: 199px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.5px;
+}
+
+.header__contact-link:hover {
+  background-color: var(--secondary); /* Например, смена фона на второй цвет */
+}
+
+
+

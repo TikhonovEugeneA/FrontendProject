@@ -1,19 +1,49 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-
-    <style media="(prefers-color-scheme: light)">
-      @import url('./src/styles/colors/light.css');
-    </style>
-    <style media="(prefers-color-scheme: dark)">
-      @import url('./src/styles/colors/dark.css');
-    </style>
+    <link rel="stylesheet" href="./src/index.css">
+    <link rel="stylesheet" href="./src/styles/colors/light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="./src/styles/colors/dark.css" media="(prefers-color-scheme: dark)">
   </head>
   <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__top">
+          <!-- Логотип -->
+          <div class="header__logo">
+            <a href="#" class="header__logo-link">
+              <img src="images/logo.svg" alt="Create" class="header__logo-create">
+            </a>
+          </div>
+
+          <!-- Навигация -->
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link header__nav-link-text">
+                  Services
+                  <img src="images/Down chevron.svg" alt="arrow" class="header__nav-link-arrow">
+                </a>
+              </li>
+              <li class="header__nav-item"><a href="#" class="header__nav-link">Case Studies</a></li>
+              <li class="header__nav-item"><a href="#" class="header__nav-link header__nav-link--active">About Us</a></li>
+              <li class="header__nav-item"><a href="#" class="header__nav-link">Blog</a></li>
+              <li class="header__nav-item"><a href="#" class="header__nav-link">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <div class="header__actions">
+            <a href="contact" class="header__contact-link">Talk to a human</a>
+          </div>
+        </div>
+      </div>
     <script type="module" src="/src/index.js"></script>
   </body>
 </html>
