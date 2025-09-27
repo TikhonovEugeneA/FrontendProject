@@ -1,0 +1,248 @@
+/* хедер растягивается на всю ширину экрана */
+.header {
+  width: 100%; /* ширина хедера на всю ширину экрана */
+  height: 661px;
+  background: url('/images/background.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  position: relative;
+  align-items: flex-start; /* выравнивание по верхнему краю */
+}
+
+/* контейнер для контента внутри хедера */
+.header__container {
+  width: 100%;
+  max-width: 1260px;
+  padding: 0 15px;
+  box-sizing: border-box; /* включаем padding в общую ширину */
+  margin: 0 auto; /* центрируем контейнер */
+  position: relative;
+  justify-content: center;
+}
+
+/* контейнер с логотипом и навигацией */
+.header__top {
+  display: flex;
+  justify-content: flex-start; /* логотип и навигация слева */
+  align-items: center;
+  width: 100%;
+  height: 52px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.header__logo-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: opacity 0.3s ease;
+}
+
+.header__logo-link:hover {
+  opacity: 0.8;
+}
+
+.header__logo-create {
+  width: 130px;
+  height: 22px;
+  object-fit: contain; /* сохраняем пропорции изображения */
+}
+
+.header__nav {
+  width: 690px;
+  height: 26px;
+  display: flex;
+  justify-content: space-between; /* равномерное распределение пунктов меню */
+  align-items: center;
+  gap: 40px;
+}
+
+/* стили для списка навигации */
+.header__nav-list {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+/* стили для ссылок меню */
+.header__nav-link {
+  text-decoration: none; /* убираем подчеркивание */
+  color: var(--white);
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 160%; /* высота строки */
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.header__nav-link:hover {
+  opacity: 1;
+}
+
+/* текст и стрелочка в навигации */
+.header__nav-link-text {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-link-arrow {
+  width: 16px; 
+  height: 16px; 
+}
+
+.header__nav-link--active {
+  color: var(--white);
+  opacity: 1;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* кнопка "Talk to a human" */
+.header__contact-link {
+  color: var(--white);
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  border-radius: 4px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  transition: background-color 0.3s ease;
+  width: 199px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.5px;
+}
+
+.header__contact-link:hover {
+  background-color: var(--secondary);
+}
+
+.header__breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 21px;
+  gap: 8px;
+  margin-top: 80px;
+}
+
+.breadcrumb__icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  left: 0px;
+  top: 2.5px; /* подправляем вертикальное положение */
+}
+
+.breadcrumb__arrow {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  top: 2.5px;
+  opacity: 0.6;
+}
+
+.breadcrumb__text {
+  font-size: 14px;
+  color: var(--white);
+  opacity: 0.6;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+  vertical-align: text-top; /* выравнивание по верхнему краю */
+}
+
+.header__main-title {
+  width: 313px;
+  height: 94px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto 0;
+}
+
+.header__main-title h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  color: var(--white);
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.header__description {
+  width: 810px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px auto 0;
+}
+
+.header__description p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--white);
+  opacity: 0.6;
+  text-align: center;
+
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1231px;
+  height: 40px;
+  margin: 120px auto 0 auto;
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--white);
+}
+
+.separator {
+  height: 40px;
+  width: 1px;
+  background-image: url('/images/divider.png');
+  background-size: contain;
+  opacity: 0.4;
+}
