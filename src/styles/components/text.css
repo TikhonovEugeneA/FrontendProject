@@ -1,0 +1,34 @@
+.text--small {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.text--upper {
+  text-transform: uppercase;
+}
+
+.text--opacity {
+  opacity: 0.6;
+}
+
+.text--base {
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.text--width-center {
+  text-align: center;
+}
+
+/* Деление по толщине */
+.text--regular {
+  font-weight: 400;
+}
+
+.text--bold {
+  font-weight: 700;
+}
+
+.text--black {
+  font-weight: 900;
+}
