@@ -17,14 +17,3 @@
   flex-shrink: 0;
   background-color: var(--gray-900);
 }
-
-.page__bunner {
-}
-
-.page__margin {
-  margin-top: 120px;
-}
-
-.page__margin2 {
-  margin-top: 180px;
-}
