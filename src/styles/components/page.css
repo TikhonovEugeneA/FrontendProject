@@ -1,0 +1,30 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--white);
+}
+
+.page__header {
+  flex-shrink: 0;
+}
+
+.page__content {
+  flex-grow: 1;
+}
+
+.page__footer {
+  flex-shrink: 0;
+  background-color: var(--gray-900);
+}
+
+.page__bunner {
+}
+
+.page__margin {
+  margin-top: 120px;
+}
+
+.page__margin2 {
+  margin-top: 180px;
+}

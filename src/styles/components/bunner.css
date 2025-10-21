@@ -1,0 +1,46 @@
+.bunner {
+  display: flex;
+  justify-content: center;
+}
+
+.bunner__statistics-list {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.statistics__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.statistics__item-description {
+  color: var(--gray-800);
+}
+
+.bunner__media {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.bunner__media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--gray-900);
+  opacity: 0.3;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.media__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
